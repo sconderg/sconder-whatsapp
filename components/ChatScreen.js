@@ -167,11 +167,17 @@ const HeaderInformation = styled.div`
 const HeaderIcons = styled.div``;
 
 const EndOfMessage = styled.div`
-    mmargin-bottom:50px;
+    margin-bottom:50px;
 `;
 
 const MessageContaner = styled.div`
     padding:30px;
     background-color:#e5ded8;
     height:90vh;
+    overflow-y:scroll;
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+        display:none;
+    }
+    scrollbar-width:none;
 `;
