@@ -24,6 +24,7 @@ function ChatScreen({chat, messages}) {
 
     const showMessages = () => {
         if(messagesSnapshot) {
+            scrollToBottom();
             return messagesSnapshot.docs.map(message => (
                 <Message 
                     key={message.id}
